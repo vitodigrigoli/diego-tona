@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Document</title>
+</head>
+<body>
+
+	<!-- Header -->
+	<header class="header">
+
+		<div class="container">
+
+			<div class="header__content">
+
+				<div class="header__content__logo">
+					<img src="./assets/logo.png" alt="">
+				</div>
+
+				<div class="header__content__text">
+					<h1 class="text--gradient">Enhancing the<br> workout experience</h1>
+				</div>
+			</div>
+
+			<div class="header__media">
+				<video src="./assets/loop.mp4" autoplay muted loop></video>
+			</div>
+		</div>
+
+	</header>
+
+	<!-- hero -->
+	<section class="hero">
+		<div class="container">
+
+			<div class="hero__text">
+				<h2>Coaching</h2>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero amet ipsa neque dolorem nesciunt totam reiciendis sapiente repellat explicabo excepturi.</p>
+				<ul>
+					<li>Lorem ipsum dolor sit amet.</li>
+					<li>Lorem ipsum dolor sit amet.</li>
+					<li>Lorem ipsum dolor sit amet.</li>
+				</ul>
+				<a href="" class="button button--white">Call to action <i class="fa-solid fa-chevron-right"></i></a>
+			</div>
+
+			<div class="hero__media">
+				<img src="./assets/hero-img.jpg" alt="">
+			</div>
+		</div>
+	</section>
+
+	<!-- hero Reverse -->
+	<section class="hero hero--reverse">
+		<div class="container">
+
+			<div class="hero__text">
+				<h2>Nutrizione</h2>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero amet ipsa neque dolorem nesciunt totam reiciendis sapiente repellat explicabo excepturi.</p>
+				<ul>
+					<li>Lorem ipsum dolor sit amet.</li>
+					<li>Lorem ipsum dolor sit amet.</li>
+					<li>Lorem ipsum dolor sit amet.</li>
+				</ul>
+				<a href="" class="button button--white">Call to action <i class="fa-solid fa-chevron-right"></i></a>
+			</div>
+
+			<div class="hero__media">
+				<img src="./assets/hero-img2.jpg" alt="">
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Banner -->
+	<section class="banner">
+		<div class="container">
+			<div class="wrapped">
+
+				<div class="banner__media">
+					<img src="./assets/simbolo.png" alt="">
+				</div>
+				<div class="banner__text">
+					<h2>Valutazione Medica</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi officiis suscipit impedit iusto enim error, tenetur sunt dolorum aliquid modi?</p>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit consequuntur magnam sapiente pariatur esse ea veniam praesentium vel, soluta expedita?</p>
+					<a href="" class="button button--blue">Call to action <i class="fa-solid fa-chevron-right"></i></a>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Media -->
+	<section class="panel">
+		<div class="container">
+
+			<div class="panel__text">
+				<h2>About me</h2>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus neque praesentium repellendus nesciunt odit.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis minima quia, obcaecati fuga libero!</p>
+				<a href="" class="button button--orange">Call to action <i class="fa-solid fa-chevron-right"></i></a>
+			</div>
+
+			<div class="panel__media shadow">
+				<img src="./assets/doc.jpg" alt="">
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Services -->
+	<section class="services">
+		<div class="container">
+
+			<h2>Inizia ora il tuo cambiamento</h2>
+
+			<div class="services__header">
+				<span class="services__header__item" id="monthly">Mensile</span>
+				<span class="services__header__item services__header__item--active" id="quarterly">Trimestrale</span>
+				<span class="services__header__item" id="half-yearly">Semestrale</span>
+			</div>
+
+			<div class="services__body">
+
+				<div class="services__body__list">
+
+					<div class="service service--orange" id="package__coaching">
+						<h3>Pacchetto</br>Coaching</h3>
+						<p>
+							<span class="service__price" id="price__coaching__monthly">39,99€</span>
+							<span class="service__price service__price--active" id="price__coaching__quarterly">29,99€</span>
+							<span class="service__price" id="price__coaching__halfyearly">19,99€</span>
+							
+							/mese
+						</p>
+					</div>
+
+					<div class="service service--green" id="package__nutrition">
+						<h3>Pacchetto</br>Nutrizione</h3>
+						<p>
+							<span class="service__price" id="price__nutrition__monthly">39,99€</span>
+							<span class="service__price service__price--active" id="price__nutrition__quarterly">29,99€</span>
+							<span class="service__price" id="price__nutrition__halfyearly">19,99€</span>
+							
+							/mese
+						</p>
+					</div>
+
+					<div class="service service--lightblue" id="package__all">
+						<h3>Pacchetto</br>Coaching & Nutrizione</h3>
+						<p>
+							<span class="service__price" id="price__all__monthly">39,99€</span>
+							<span class="service__price service__price--active" id="price__all__quarterly">29,99€</span>
+							<span class="service__price" id="price__all__halfyearly">19,99€</span>
+							
+							/mese
+						</p>
+						<div class="service__label">	
+							<i class="fa-solid fa-bolt"></i> Più scelto
+						</div>
+
+						<div class="service__microinteration">
+							<i class="fa-solid fa-computer-mouse"></i>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="services__body__sticky">
+
+					<div class="services__body__sticky__item services__body__sticky__item--active" id="description__coaching">
+						<h4>Pacchetto Coaching</h4>
+						<ul>
+							<li class="list--orange">Lorem ipsum dolor sit amet.</li>
+							<li class="list--orange">Lorem ipsum dolor sit amet.</li>
+							<li class="list--orange">Lorem ipsum dolor sit amet.</li>
+						</ul>
+						<a href="" class="button button--orange">Call to action <i class="fa-solid fa-chevron-right"></i></a>
+						
+					</div>
+
+					<div class="services__body__sticky__item" id="description__nutrition">
+						<h4>Pacchetto Nutrizione</h4>
+						<ul>
+							<li class="list--green">Lorem ipsum dolor sit amet.</li>
+							<li class="list--green">Lorem ipsum dolor sit amet.</li>
+							<li class="list--green">Lorem ipsum dolor sit amet.</li>
+						</ul>
+
+						<a href="" class="button button--green">Call to action <i class="fa-solid fa-chevron-right"></i></a>
+					</div>
+
+					<div class="services__body__sticky__item" id="description__all">
+						<h4>Pacchetto</br>Coaching & Nutrizione</h4>
+						<ul>
+							<li class="list--orange">Lorem ipsum dolor sit amet.</li>
+							<li class="list--orange">Lorem ipsum dolor sit amet.</li>
+							<li class="list--orange">Lorem ipsum dolor sit amet.</li>
+							<li class="list--green">Lorem ipsum dolor sit amet.</li>
+							<li class="list--green">Lorem ipsum dolor sit amet.</li>
+							<li class="list--green">Lorem ipsum dolor sit amet.</li>
+						</ul>
+
+						<a href="" class="button button--lightblue">Call to action <i class="fa-solid fa-chevron-right"></i></a>
+
+					</div>
+
+					
+
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+
+
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="./scripts.js"></script>
+</body>
+</html>

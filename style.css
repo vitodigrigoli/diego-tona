@@ -32,6 +32,7 @@
 *::after{ margin: 0; padding: 0; box-sizing: border-box;}
 
 html{font-family: 'Jost', sans-serif;}
+main{background-color: white; margin-bottom: 100vh; border: 5px solid blue;}
 h1, h2, h3, h4, h5, h6{text-transform: uppercase; font-weight: 900; margin-block-end: 1rem;}
 img{width: 100%; height: auto; display: block;}
 section {margin: 2rem 0; padding: 12vh 0;}
@@ -73,7 +74,7 @@ ul li::before{content: url(./assets/diamond-solid.png); display: inline-block; t
 
 /* Header
 ------------------------------------------------------------------------- */
-.header {height: 100vh; height: 100svh; border: 1px solid green; display: flex; align-items: center; position: relative; }
+.header {height: 100vh; height: 100svh; border: 1px solid green; display: flex; align-items: center; position: relative; z-index: 10; background-color: white;}
 .header .container{display: flex; align-items: center; justify-content: space-between;}
 
 .header__content{ border: 1px solid black; z-index: 10; display: flex; flex-direction: column; row-gap: 2rem;}
@@ -128,8 +129,8 @@ ul li::before{content: url(./assets/diamond-solid.png); display: inline-block; t
 
 /* Button
 ------------------------------------------------------------------------- */
-.button{display: inline-block; border: 2px solid white; padding: 1rem; font-size: var(--text-cta); margin-top: 4vh;  text-transform: uppercase;color: white; font-weight: 500; position: relative; z-index: 15; background-color: rgba(255,255, 255, 0.2); text-shadow: none; transition: 0.1s;}
-.button::before{content: ''; position: absolute; top: 15%; left: 5%; width: 100%;height: 100%; background-color: white; opacity: 0.2; z-index: 10; transition: 0.4s;}
+.button{display: inline-block; border: 2px solid white; padding: 1rem; font-size: var(--text-cta); margin-top: 4vh;  text-transform: uppercase;color: white; font-weight: 500; position: relative; z-index: 15; background-color: rgba(255,255, 255, 0.2); text-shadow: none; transition: 0.1s; text-align: center;}
+.button::before{content: ''; position: absolute; top: 8px; left: 8px; width: 100%;height: 100%; background-color: white; opacity: 0.2; z-index: 10; transition: 0.4s;}
 .button:hover::before{top: 0%; left: 0%;}
 
 .button:active{transform: translate(5px, 5px) scale(0.95)}
@@ -273,6 +274,58 @@ ul li::before{content: url(./assets/diamond-solid.png); display: inline-block; t
 	}
 }
 
+
+
+/* Faqs
+------------------------------------------------------------------------- */
+.faqs{background-color: var(--white);}
+.faqs h2{ font-size: var(--text-1); text-align: center;}
+
+.faqs__list{margin-top: 8vh; display: flex;flex-direction: column; gap: 2vh;}
+
+.faq{border: 2px solid blue; border-left: 10px solid var(--color-4); padding: 1rem; background-color: var(--color-4--20);}
+
+.faq__question{border: 2px solid green; display: flex; justify-content: space-between;  align-items: center; cursor: pointer;}
+.faq__question h3{margin-block-end: unset; text-transform: unset; font-weight: 500; font-size: var(--text-4);}
+.faq__question__icon{transition: 0.2s;}
+
+.faq__answer{ max-height: 0; overflow: hidden; transition: 0.2s}
+.faq__answer p{margin-block-end: unset; font-size: var(--text-4); opacity: 0.5; padding-top: 1rem;}
+
+
+.faq--active .faq__answer{ max-height: 1000px; }
+.faq--active .faq__question__icon{ transform: rotate(180deg); }
+
+
+/* Footer
+------------------------------------------------------------------------- */
+.footer{background: linear-gradient(90deg, var(--color-4), var(--color-2)); height: 100vh; width: 100%; position: fixed; top: 0; z-index: -1}
+.footer .container{position: relative; display: flex; justify-content: center; position: relative; flex-direction: column; height: 100%;}
+
+
+.footer__body{display: flex; justify-content: space-between; align-items: center; border: 1px solid red; width: 100%; flex-wrap: wrap;}
+.footer__body__social{display: flex; flex-direction: column;; width: 30%;}
+.footer__body__logo{width: 30%;}
+
+.footer__subfooter{border: 2px solid yellow; display: flex; justify-content: space-between; position: absolute; bottom: 0; left: 0; width: 100%; color: white; font-weight: 200; letter-spacing: 1px; flex-wrap: wrap;}
+.footer__subfooter__item{text-align: center; border: 1px solid chartreuse;}
+.footer__subfooter p{font-size: var(--text-cta);}
+.footer__subfooter a{color: white; }
+.footer__subfooter__item:last-child a{ font-weight: 300;}
+
+
+
+@media (max-width: 1025px) {
+
+	.footer .container{position: relative; display: flex; justify-content: space-between; position: relative; flex-direction: column; height: 100%;}
+
+	.footer__body{justify-content: center; gap: 2vh; flex-direction: column-reverse; margin-top: 8vh;}
+	.footer__body__social{width: 100%; max-width: 300px;}
+	.footer__body__logo{width: 100%; max-width: 250px;}
+
+	.footer__subfooter__item{ width: 100%;}
+
+}
 
 
 

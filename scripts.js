@@ -85,6 +85,11 @@ packages.forEach(package => package.addEventListener('click', () => {
 }))
 
 
+const faqs = document.querySelectorAll('.faq')
+
+faqs.forEach( faq => faq.addEventListener('click', () => {
+	faq.classList.toggle('faq--active')
+}))
 
 
 

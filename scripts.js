@@ -93,7 +93,13 @@ faqs.forEach( faq => faq.addEventListener('click', () => {
 
 
 
+const navbar__button = document.querySelector('.navbar__button')
+const navbar = document.querySelector('.navbar')
 
+navbar__button.addEventListener('click', () =>{
+	navbar__button.classList.toggle('navbar__button--active')
+	navbar.classList.toggle('navbar--active')
+})
 
 
 

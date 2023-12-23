@@ -27,7 +27,6 @@ const prices__quarterly = [price__coaching__quarterly, price__nutrition__quarter
 const prices__halfyearly  = [price__coaching__halfyearly , price__nutrition__halfyearly , price__all__halfyearly ]
 
 const headers = [header__monthly, header__quarterly, header__halfyearly]
-const packages = [package__coaching, package__nutrition, package__all]
 
 
 headers.forEach(header => {
@@ -63,26 +62,6 @@ headers.forEach(header => {
 		
     });
 });
-
-
-packages.forEach(package => package.addEventListener('click', () => {
-
-	if(package.id == 'package__coaching'){
-		description__coaching.classList.add('services__body__sticky__item--active')
-		description__nutrition.classList.remove('services__body__sticky__item--active')
-		description__all.classList.remove('services__body__sticky__item--active')
-	}
-	else if(package.id == 'package__nutrition'){
-		description__coaching.classList.remove('services__body__sticky__item--active')
-		description__nutrition.classList.add('services__body__sticky__item--active')
-		description__all.classList.remove('services__body__sticky__item--active')
-	}
-	else{
-		description__coaching.classList.remove('services__body__sticky__item--active')
-		description__nutrition.classList.remove('services__body__sticky__item--active')
-		description__all.classList.add('services__body__sticky__item--active')
-	}
-}))
 
 
 const faqs = document.querySelectorAll('.faq')

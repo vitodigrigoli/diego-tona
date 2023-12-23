@@ -201,7 +201,7 @@ ul li::before{content: url(./assets/diamond-solid.png); display: inline-block; t
 
 .services__body__sticky{display: flex; justify-content: space-between; width: 100%; border: 1px solid red; gap: 8vh; flex-wrap: wrap;}
 
-.service{background-color: white; padding: 1rem 0; text-align: center;width: 40%; height: fit-content; position: sticky; top: 16vh;}
+.service{background-color: white; padding: 1.5rem 0; text-align: center;width: 40%; height: fit-content; position: sticky; top: 16vh;}
 .service:hover{color: white; box-shadow: unset;}
 
 .service__price{display: none;}
@@ -236,6 +236,7 @@ ul li::before{content: url(./assets/diamond-solid.png); display: inline-block; t
 	.services h2{width: 100%;}
 	.service{width: 100%;  max-width: 400px; margin: 0 auto; position: unset;}
 	.services__body__sticky__description{width: 100%;}
+	.services__header{position: unset; }
 
 
 }
@@ -321,9 +322,9 @@ ul li::before{content: url(./assets/diamond-solid.png); display: inline-block; t
 .navbar__button{margin-top: 0; cursor: pointer; color: white; }
 .navbar__button{ display: flex; align-items: center; justify-content: space-between; gap: 1.2rem; margin-top: 0; cursor: pointer; position: relative; z-index: 110;;}
 
-.navbar__button__icon{ width: 60px; position: relative; display: flex; flex-wrap: wrap; align-items: center; gap: 5px; transition: 0.4s;}
+.navbar__button__icon{ width: 50px; position: relative; display: flex; flex-wrap: wrap; align-items: center; gap: 5px; transition: 0.4s;}
 
-.navbar__button__icon__toggle{display: block; width: 100%; height: 5px; transition: 0.4s; background-color: white;}
+.navbar__button__icon__toggle{display: block; width: 100%; height: 3px; transition: 0.4s; background-color: white;}
 
 .navbar__button__icon__toggle:nth-child(1){ }
 .navbar__button__icon__toggle:nth-child(2){visibility: hidden; display: none;}
@@ -333,9 +334,9 @@ ul li::before{content: url(./assets/diamond-solid.png); display: inline-block; t
 .navbar__button--active .navbar__button__icon{display: block; width: 40px;;}
 .navbar__button--active .navbar__button__icon__toggle{position: absolute; top: 50%; left: 0; transform: translateY(-50%); transform-origin: left center; }
 
-.navbar__button--active .navbar__button__icon__toggle:nth-child(1){ width: 45%; transform: translateY(calc(2px - 50%)) rotate(-45deg);}
-.navbar__button--active .navbar__button__icon__toggle:nth-child(2){ visibility: visible; display: block; height: 5px; border-bottom-left-radius: 50%; transform: translateY(-50%) translateX(4px);}
-.navbar__button--active .navbar__button__icon__toggle:nth-child(3){ width: 45%; transform: translateY(calc(-2px - 50%)) rotate(45deg);}
+.navbar__button--active .navbar__button__icon__toggle:nth-child(1){ width: 45%; transform: translateY(calc(1px - 50%)) rotate(-45deg); }
+.navbar__button--active .navbar__button__icon__toggle:nth-child(2){ visibility: visible; display: block; height: 3px;  transform: translateY(-50%) translateX(1px);}
+.navbar__button--active .navbar__button__icon__toggle:nth-child(3){ width: 45%; transform: translateY(calc(-1px - 50%)) rotate(45deg); }
 
 
 

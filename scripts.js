@@ -28,40 +28,41 @@ const prices__halfyearly  = [price__coaching__halfyearly , price__nutrition__hal
 
 const headers = [header__monthly, header__quarterly, header__halfyearly]
 
+if (!headers){
+	headers.forEach(header => {
+		header.addEventListener('click', () => {
 
-headers.forEach(header => {
-    header.addEventListener('click', () => {
+			if(header.id == 'monthly'){
+				prices__monthly.forEach(price => price.classList.add('service__price--active'))
+				prices__quarterly.forEach(price => price.classList.remove('service__price--active'))
+				prices__halfyearly.forEach(price => price.classList.remove('service__price--active'))
 
-		if(header.id == 'monthly'){
-			prices__monthly.forEach(price => price.classList.add('service__price--active'))
-			prices__quarterly.forEach(price => price.classList.remove('service__price--active'))
-			prices__halfyearly.forEach(price => price.classList.remove('service__price--active'))
+				header__monthly.classList.add('services__header__item--active')
+				header__quarterly.classList.remove('services__header__item--active')
+				header__halfyearly.classList.remove('services__header__item--active')
+			}
+			else if(header.id == 'quarterly'){
+				prices__monthly.forEach(price => price.classList.remove('service__price--active'))
+				prices__quarterly.forEach(price => price.classList.add('service__price--active'))
+				prices__halfyearly.forEach(price => price.classList.remove('service__price--active'))
 
-			header__monthly.classList.add('services__header__item--active')
-			header__quarterly.classList.remove('services__header__item--active')
-			header__halfyearly.classList.remove('services__header__item--active')
-		}
-		else if(header.id == 'quarterly'){
-			prices__monthly.forEach(price => price.classList.remove('service__price--active'))
-			prices__quarterly.forEach(price => price.classList.add('service__price--active'))
-			prices__halfyearly.forEach(price => price.classList.remove('service__price--active'))
+				header__monthly.classList.remove('services__header__item--active')
+				header__quarterly.classList.add('services__header__item--active')
+				header__halfyearly.classList.remove('services__header__item--active')
+			}
+			else{
+				prices__monthly.forEach(price => price.classList.remove('service__price--active'))
+				prices__quarterly.forEach(price => price.classList.remove('service__price--active'))
+				prices__halfyearly.forEach(price => price.classList.add('service__price--active'))
 
-			header__monthly.classList.remove('services__header__item--active')
-			header__quarterly.classList.add('services__header__item--active')
-			header__halfyearly.classList.remove('services__header__item--active')
-		}
-		else{
-			prices__monthly.forEach(price => price.classList.remove('service__price--active'))
-			prices__quarterly.forEach(price => price.classList.remove('service__price--active'))
-			prices__halfyearly.forEach(price => price.classList.add('service__price--active'))
-
-			header__monthly.classList.remove('services__header__item--active')
-			header__quarterly.classList.remove('services__header__item--active')
-			header__halfyearly.classList.add('services__header__item--active')
-		}
-		
-    });
-});
+				header__monthly.classList.remove('services__header__item--active')
+				header__quarterly.classList.remove('services__header__item--active')
+				header__halfyearly.classList.add('services__header__item--active')
+			}
+			
+		});
+	});
+}
 
 
 const faqs = document.querySelectorAll('.faq')

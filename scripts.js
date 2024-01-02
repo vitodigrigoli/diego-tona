@@ -129,7 +129,6 @@ const navbar__button = document.querySelector('.navbar__button')
 const navbar = document.querySelector('.navbar')
 
 navbar__button.addEventListener('click', () =>{
-	console.log('navbar__button')
 
 	navbar__button.classList.toggle('navbar__button--active')
 	navbar.classList.toggle('navbar--active')
@@ -141,10 +140,16 @@ const navbar__body__item = document.querySelectorAll('.navbar__body__item')
 
 navbar__body__item.forEach(item => item.addEventListener('click', () => {
 	navbar.classList.remove('navbar--active')
+	navbar__button.classList.remove('navbar__button--active')
 })) 
 
 const navbar__header = document.querySelector('.navbar__header')
-navbar__header.addEventListener('click', () => navbar.classList.remove('navbar--active'))
+
+navbar__header.addEventListener('click', () => {
+	navbar.classList.remove('navbar--active')
+	navbar__button.classList.remove('navbar__button--active')
+	}
+)
 
 
 const buttonsHandler = () => {

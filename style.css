@@ -112,7 +112,10 @@ ul li::before{content: url('./assets/diamond-solid.png');display: inline-block; 
 
 
 @media (max-width: 1025px) {
+	
+	.header__content{ z-index: 10; display: flex; flex-direction: column; row-gap: 2rem; width: 100%;}
 	.header__content__logo{width: 45%;  }
+
 
 }
 
@@ -202,7 +205,7 @@ ul li::before{content: url('./assets/diamond-solid.png');display: inline-block; 
 
 .panel__text{width: 50%;}
 .panel__text h2{font-size: var(--text-1);}
-.panel--bg .panel__text h2{font-size: var(--text-2);}
+
 .panel__text p{opacity: 0.5;}
 
 .panel__media{width: 35%; position: relative; transition: 0.4s;}
@@ -210,6 +213,8 @@ ul li::before{content: url('./assets/diamond-solid.png');display: inline-block; 
 
 .panel__media--compare{position: relative; aspect-ratio: 4/5; }
 .panel__media--compare img{width: 100%; height: 100%; object-fit: cover;}
+
+.panel .icv__label {font-family: inherit; letter-spacing: 1px;}
 
 
 @media (max-width: 1025px) {
@@ -311,7 +316,7 @@ ul li::before{content: url('./assets/diamond-solid.png');display: inline-block; 
 
 .faq{ border-left: 10px solid var(--color-4); padding: 1rem; background-color: var(--color-4--20); cursor: pointer;}
 
-.faq__question{display: flex; justify-content: space-between;  align-items: center; }
+.faq__question{display: flex; justify-content: space-between;  align-items: center; gap: 1rem; }
 .faq__question h3{margin-block-end: unset; text-transform: unset; font-weight: 500; font-size: var(--text-4);}
 .faq__question__icon{transition: 0.2s;}
 
@@ -348,7 +353,7 @@ ul li::before{content: url('./assets/diamond-solid.png');display: inline-block; 
 
 	.footer__body{justify-content: center; gap: 2vh; flex-direction: column-reverse; margin-top: 8vh;}
 	.footer__body__social{width: 100%; max-width: 300px;}
-	.footer__body__logo{width: 100%; max-width: 250px;}
+	.footer__body__logo{width: 70%; max-width: 250px;}
 
 	.footer__subfooter__item{ width: 100%;}
 
@@ -415,7 +420,7 @@ ul li::before{content: url('./assets/diamond-solid.png');display: inline-block; 
 
 @media (max-width: 1025px) {
 
-	.navbar__header{ width: 100%; max-width: 400px;}
+	.navbar__header{ width: 70%; max-width: 250px;}
 	.navbar__body{gap: 12vh; width: 100%; max-width: 400px;}
 	.navbar__body__item__media{ width: 35%;}
 	.navbar__body__item__text{width: 60%;}
